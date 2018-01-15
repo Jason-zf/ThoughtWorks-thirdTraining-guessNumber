@@ -9,16 +9,16 @@ public class AnswerGenerator {
     public String generate() {
         Random r=new Random();
         int num;
-        List list=new ArrayList();
+        String res="";
         boolean flag=true;
         while (flag){
             num=r.nextInt(10);
-            if(!list.contains(num))
-                list.add(num);
-            if(list.size()==_numOfAnswer)
+            String s=String.valueOf(num);
+            if(!res.contains(s))
+                res+=s;
+            if(res.length()==_numOfAnswer)
                 flag=false;
         }
-        String res=list.toString();
         return res;
     }
 }
