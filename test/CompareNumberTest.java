@@ -10,14 +10,14 @@ import static org.junit.Assert.assertTrue;
 public class CompareNumberTest {
 
     @Test
-    public void shouldReturnNotEmptyWhenInputTwoParam() {
+    public void shouldReturnNotEmptyWhenInputTwoParams() {
         CompareNumber compareNumber = new CompareNumber();
         String result = compareNumber.compare("1234", "1234");
         assertThat(result, notNullValue());
     }
 
     @Test
-    public void shouldReturnCorrectFormatWhenInputTwoNumbers() {
+    public void shouldReturnCorrectFormatWhenInputTwoParams() {
         CompareNumber compareNumber = new CompareNumber();
         String result = compareNumber.compare("1234", "1234");
         int num = Integer.valueOf(result.substring(0, 1));

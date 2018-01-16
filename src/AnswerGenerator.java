@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class AnswerGenerator {
     /*生成随机数的个数*/
-    final int _numOfAnswer=4;
+    final static int _numOfAnswer=4;
 
-    public String generate() {
+    public static String generate() {
         Random r=new Random();
         int num;
         String res="";
