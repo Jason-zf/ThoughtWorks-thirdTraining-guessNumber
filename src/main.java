@@ -8,7 +8,7 @@ public class main {
 
         Scanner scanner = new Scanner(System.in);
         Guess guess = new Guess();
-        System.out.println("Welcome\n");
+        System.out.println("Welcome!\n");
         String res;
         boolean isGuessCorrect=false;
         for (int i = 0; i < MAX_NUM_OF_INPUT; ++i) {
@@ -31,7 +31,7 @@ public class main {
             System.out.println("Congratulations!");
         else
             System.out.println("Game Over");
-        System.out.close();
+        System.exit(0);
     }
 
     public static boolean containRepeatCharacter(String inputStr){
