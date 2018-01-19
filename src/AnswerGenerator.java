@@ -1,23 +1,20 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class AnswerGenerator {
-    /*生成随机数的个数*/
-    final static int _numOfAnswer=4;
+    final static int MAX_NUM_OF_ANSWER = 4;
 
     public static String generate() {
-        Random r=new Random();
+        Random r = new Random();
         int num;
-        String res="";
-        boolean flag=true;
-        while (flag){
-            num=r.nextInt(10);
-            String s=String.valueOf(num);
-            if(!res.contains(s))
-                res+=s;
-            if(res.length()==_numOfAnswer)
-                flag=false;
+        String res = "";
+        boolean flag = true;
+        while (flag) {
+            num = r.nextInt(10);
+            String s = String.valueOf(num);
+            if (!res.contains(s))
+                res += s;
+            if (res.length() == MAX_NUM_OF_ANSWER)
+                flag = false;
         }
         return res;
     }
